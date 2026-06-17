@@ -1,8 +1,8 @@
 <?php
-require_once 'koneksi/database.php';
-require_once 'PendaftaranReguler.php';
-require_once 'PendaftaranPrestasi.php';
-require_once 'PendaftaranKedinasan.php';
+require_once 'database.php';
+require_once 'pendaftaranreguler.php';
+require_once 'pendaftaranprestasi.php';
+require_once 'pendaftarankedinasan.php';
 
 // Inisialisasi Database
 $database = new Database();
@@ -25,9 +25,9 @@ $dataKedinasan = PendaftaranKedinasan::getDaftarKedinasan($db);
         table { width: 100%; border-collapse: collapse; margin-bottom: 40px; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 4px; overflow: hidden; }
         th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #dee2e6; }
         th { background-color: #34495e; color: white; text-transform: uppercase; font-size: 0.85rem; }
-        tr:hover { background-color: #f1f2f6; }
+        tr:hover { background-color: #4f6fef; }
         .text-right { text-align: right; }
-        .badge-total { background-color: #27ae60; color: white; padding: 5px 10px; border-radius: 4px; font-weight: bold; }
+        .badge-total { background-color: #2eda76; color: white; padding: 5px 10px; border-radius: 4px; font-weight: bold; }
     </style>
 </head>
 <body>
